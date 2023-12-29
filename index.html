@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+        <script src="https://kit.fontawesome.com/a88e03b00a.js" crossorigin="anonymous"></script>
+
   </head>
-  <body>
+  <body class="dark-mode">
     <nav id="nav-bar">
       <div class="logo">Vincent Do</div>
       <div>
@@ -16,25 +19,48 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#github">Github</a></li>
           <li><a href="#contact">Contact</a></li>
+          <button 
+           class="theme-toggle 
+           type="button"
+           class="nav-button">
+           <i class="fa-regular fa-sun"></i></button>
         </ul>
       </div>
     </nav>
-    <nav id="drop-nav">
+    <nav id="nav-menu">
       <div class="logo">Vincent Do</div>
-      <div class="drop-menu">
+      <div class="menu">
         <div class="menu-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#github" onclick="toggleMenu()">Github</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#github" onclick="toggleMenu()">Github</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
       </div>
     </nav>
-    <script src="script.js"></script>
+    <section id="profile">
+      <div class="section_pic">
+        <img src="./assests/profile-pic.png" alt="Vincent Do profile-pic" />
+      </div>
+      <div class="section_text">
+        <h1 class="Title">Vincent Do</h1>
+        <p class="section_text_p1">Hello, Im</p>
+        <p class="section_text_p2">font</p>
+        <div class="bts-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assests/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+      </div>
+    </section>
+        <script src="/script.js"></script>
   </body>
 </html>
