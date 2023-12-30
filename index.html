@@ -7,10 +7,13 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-        <script src="https://kit.fontawesome.com/a88e03b00a.js" crossorigin="anonymous"></script>
-
+    <script
+    src="https://kit.fontawesome.com/a88e03b00a.js"
+    crossorigin="anonymous"
+    ></script>
+    <script src="/script.js" defer></script>
   </head>
-  <body class="dark-mode">
+  <body>
     <nav id="nav-bar">
       <div class="logo">Vincent Do</div>
       <div>
@@ -19,11 +22,10 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#github">Github</a></li>
           <li><a href="#contact">Contact</a></li>
-          <button 
-           class="theme-toggle 
-           type="button"
-           class="nav-button">
-           <i class="fa-regular fa-sun"></i></button>
+
+          <button class="theme-toggle" onclick="changeImage()">
+            <img src="/images/sun.png" id="icon">
+          </button>
         </ul>
       </div>
     </nav>
@@ -58,9 +60,24 @@
           >
             Download CV
           </button>
+           <button
+            class="btn btn-color-2"
+            onclick="location.href='./#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assests/github.png" 
+          alt="github profile"
+          class="resource-icon"
+          onclick="location.href='https://github.com/Peekabunny'" />
+          <img src="./assests/handshake-logo.png" 
+          alt="handshake profile"
+          class="resource-icon"
+          onclick="location.href='https://ucf.joinhandshake.com/stu/users/54051265'" />
         </div>
       </div>
     </section>
-        <script src="/script.js"></script>
   </body>
 </html>
