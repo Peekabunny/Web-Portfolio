@@ -248,4 +248,27 @@ section {
 
 /* Profile Section*/
 
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5 rem;
+  height: 80vh;
+}
+.section-pic {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto, 0;
+}
+.section-text {
+  align-self: center;
+  text-align: center;
+}
 
+.section {
+  font-weight: 600;
+}
+
+.section-text-p1 {
+  text-align: center;
+}
