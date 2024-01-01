@@ -80,7 +80,7 @@ nav,
 }
 
 nav {
-  position: fixed;
+  position: fixed; 
   justify-content: space-evenly;
   align-items: center;
   height: 8vh;
@@ -253,6 +253,7 @@ section {
   justify-content: center;
   gap: 5 rem;
   height: 80vh;
+  padding-top: 150px;
 }
 .section-pic {
   display: flex;
@@ -263,12 +264,85 @@ section {
 .section-text {
   align-self: center;
   text-align: center;
+  padding-left: 4rem;
 }
 
-.section {
+.section-text p {
   font-weight: 600;
 }
 
 .section-text-p1 {
   text-align: center;
+}
+
+.section-text-p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* Icon */
+
+.resource-icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* Buttons */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300s ease;
+  padding: 1rem; 
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.2rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgba(0, 0, 0, 0);
+}
+ 
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.2rem solid;
+}
+
+btn-container {
+  gap: 1rem;
 }
