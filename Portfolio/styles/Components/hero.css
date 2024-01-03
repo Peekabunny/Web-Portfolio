@@ -1,0 +1,11 @@
+.hero {
+    text-align: center;
+    
+}
+
+.hero__img {
+    display: inline;
+    border-radius: 50%;
+    width: 6rem; 
+    height: 6rem;
+}

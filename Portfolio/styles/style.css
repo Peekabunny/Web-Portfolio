@@ -5,10 +5,10 @@
   --clr-slate600: #475569;
   --clr-slate800: #1e293b;
   --clr-sky: #91E6D8;
-  --clr-indigo: #4f46e5;
+  --clr-pink: FF63C3;
 
   /* sky rgb(145, 230, 216) */
-  /* indigo rgb(79, 70, 229) */
+  /* rose-pink  rgb(255,99,195) */
 
   /* sizes from tailwindcss.com*/
   --size-xxs: 0.5rem;  
@@ -68,5 +68,5 @@ a {
 }
 
 strong {
-  color: var(--clr-indigo);
+  color: var(--clr-pink);
 }
