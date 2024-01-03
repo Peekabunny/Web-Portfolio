@@ -8,20 +8,29 @@
 }
 
 .header__menu {
-	display: none;
+	display: none;	
 }
 
-/* xs */
+.header__bars {
+	color: var(--clr-light);
+	width: var(--size-2x1);
+	height: var(--size-2x1);
+	display: block; 
+}
+
+
+/* xs 
 @media (min-width: 475px) {
 	
 }
-/* sm */
-@media (min-with: 640px) {
+*/
+/* sm
+@media (min-width: 640px) {
 	
 } 
+*/
 /* md */
-@media (min-with: 768px) {
-	
+@media (min-width: 768px) {
 	.header__menu {
 	display: flex; 
 	align-items: center;
@@ -49,6 +58,7 @@
 			display: block;
 			color: var(--clr-slate600);
 			width: var(--size-base);
+			height: var(--size-base);
 					
 	 }
 	
@@ -60,16 +70,38 @@
 	.header__resume {
 		font-size: var(--size-xs);
 	}
+	.header__bars {
+		display: none;
+	}
+	
 }
 /* lg */
-@media (min-with: 1024px) {
-
+@media (min-width: 1024px) {		
+	.header__link {
+		font-size: var(--size-sm);
+		
+	}
+	
+	.header__sun {
+		/* from: hero icons.com */
+		/* default display: inline-block; */
+		
+		width: var(--size-xl);
+		height: var(--size-xl);
+	}
+	
+	.header__resume {
+		font-size: var(--size-sm);
+	}
 }
-/* xlg */
-@media (min-with: 1280px) {
 
+/* xlg
+@media (min-width: 1280px) {
+	
 }
-/* 2xlg */
-@media (min-with: 1536px) {
- 
+/* 2xlg 
+
+@media (min-width: 1536px) {
+	
 } 
+*/
