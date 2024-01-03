@@ -13,8 +13,8 @@
 
 .header__bars {
 	color: var(--clr-light);
-	width: var(--size-2x1);
-	height: var(--size-2x1);
+	width: var(--size-2xl);
+	height: var(--size-2xl);
 	display: block; 
 }
 
@@ -51,7 +51,10 @@
 	.header__link:hover {
 			color: var(--clr-sky);
 	}
-	
+	.header__line {
+			border: 1px solid var(--clr-slate600);
+			padding-top: 2em; 
+	}
 	.header__sun {
 			/* from: hero icons.com */
 			/* default display: inline-block; */
@@ -61,12 +64,6 @@
 			height: var(--size-base);
 					
 	 }
-	
-	.header__line {
-			border: 1px solid var(--clr-slate600);
-			padding-top: 2em; 
-	}
-	
 	.header__resume {
 		font-size: var(--size-xs);
 	}
@@ -79,20 +76,16 @@
 @media (min-width: 1024px) {		
 	.header__link {
 		font-size: var(--size-sm);
-		
-	}
-	
-	.header__sun {
-		/* from: hero icons.com */
-		/* default display: inline-block; */
-		
+}
+
+.header__sun {
 		width: var(--size-xl);
 		height: var(--size-xl);
-	}
-	
-	.header__resume {
-		font-size: var(--size-sm);
-	}
+				
+ }
+.header__resume {
+	font-size: var(--size-xs);
+}
 }
 
 /* xlg
