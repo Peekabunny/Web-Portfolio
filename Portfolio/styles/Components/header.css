@@ -12,12 +12,6 @@
 	display: none;	
 }
 
-.header__bars {
-	color: var(--clr-light);
-	width: var(--size-2xl);
-	height: var(--size-2xl);
-	display: block; 
-}
 
 
 /* xs 
@@ -68,10 +62,6 @@
 	.header__resume {
 		font-size: var(--size-xs);
 	}
-	.header__bars {
-		display: none;
-	}
-	
 }
 /* lg */
 @media (min-width: 1024px) {		

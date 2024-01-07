@@ -1,0 +1,55 @@
+#mobile__nav {
+    display: none;
+}
+
+.mobile__menu {
+    position: relative;
+    display: inline-block;
+}
+
+.header__bar_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* xs 
+@media (min-width: 475px) {
+  
+}
+*/
+/* sm 
+@media (min-width: 640px) {
+  
+} 
+*/
+/* md */
+@media (max-width: 768px) {
+    .header__menu {
+        display: none;
+    }
+    
+    #mobile__nav {
+        display:flex;
+    }
+  
+}
+/* lg 
+@media (min-width: 1024px) {
+    
+}
+*/
+/* xlg 
+@media (min-width: 1280px) {
+  
+}
+*/
+/* 2xlg
+@media (min-width: 1536px) {
+  
+} 
+*/
