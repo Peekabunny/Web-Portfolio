@@ -27,7 +27,7 @@
           </li>
           <li class="header__line"></li>
           <li>
-            <button class="header__sun">
+            <button id="theme-toggle" class="header__sun">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -44,24 +44,19 @@
           </li>
         </ul>
         <!-- Mobile--Navigation -->
-        <nav id="mobile__nav">
-          <div class="logo">Vincent Do</div>
-          <div class="mobile__menu">
-            <div class="header__bar_icon" onclick="ToggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+        <nav id="hamburger-nav">
+          <!--<div class="logo">John Doe</div>-->
+          <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="mobile__links ">
-              <li>
-                <a class="header__link" href="#about" onclick="ToggleMenu()">About</a>
-              </li>
-              <li>
-                <a class="header__link" href="#featured" onclick="ToggleMenu()">Work</a>
-              </li>
-              <li>
-                <a class="header__link" href="#contact" onclick="ToggleMenu()">Contact</a>
-              </li>
+            <div class="menu-links">
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
           </div>
         </nav>
@@ -71,7 +66,7 @@
     
     <main>
       <section class="hero container">
-        <img class="hero__img" src="/profile-pic.png" alt="profile-pic" />
+        <img   class="hero__img" src="/profile-pic.png" alt="profile-pic" />
         <h2 class="hero__subtitle">Hi, I'm Vincent Do 👋</h2>
         <h1 class="hero__title">
           UCF Student <br />Majoring in Computer Science.
@@ -121,7 +116,8 @@
           </div>
         </div>
         <div class="about__img-wrapper">
-          <img class="about__img" src="about-pic.png" alt="about-pic" />
+          <img class="about__img lazy"  src="https://via.placeholder.com/1000"
+          data-src="about-pic.png" alt="about-pic" />
         </div>
       </section>
       <section id="featured" class="featured container section">
@@ -175,28 +171,28 @@
         </div>
         <div class="featured_img-container">
           <div class="featured__img-wrapper">
-            <img src="/artren.png" alt="Project-img" />
+            <img class="lazy" src="https://via.placeholder.com/900" data-src="/artren.png" alt="Project-img" />
           </div>
           <div class="featured__img-wrapper">
-            <img src="/app.png" alt="Project-img" />
+            <img class="lazy" src="https://via.placeholder.com/1920x968" data-src="/app.png" alt="Project-img" />
           </div>
           <div class="featured__img-wrapper">
-            <img src="/artren.png" alt="Project-img" />
+            <img class="lazy" src="https://via.placeholder.com/900" data-src="/artren.png" alt="Project-img" />
           </div>
           <div class="featured__img-wrapper">
-            <img src="/blog.png" alt="Project-img" />
+            <img class="lazy" src="https://via.placeholder.com/1920x968" data-src="/blog.png" alt="Project-img" />
           </div>
           <div class="featured__img-wrapper">
-            <img src="/pro-code.jpg" alt="Project-img" />
+            <img class="lazy" src="https://via.placeholder.com/257x196" data-src="/pro-code.jpg" alt="Project-img" />
           </div>
           <div class="featured__img-wrapper">
-            <img src="/app.png" alt="Project-img" />
+            <img class="lazy" src="https://via.placeholder.com/1920x968" data-src="/app.png" alt="Project-img" />
           </div>
           <div class="featured__img-wrapper">
-            <img src="/pricing.png" alt="Project-img" />
+            <img class="lazy" src="https://via.placeholder.com/1920x968" data-src="/pricing.png" alt="Project-img" />
           </div>
           <div class="featured__img-wrapper">
-            <img src="/program-art.jpg" alt="Project-img" />
+            <img class="lazy" src="https://via.placeholder.com/1128x635" data-src="/program-art.jpg" alt="Project-img" />
           </div>
         </div>
       </section>
@@ -211,7 +207,10 @@
           <!--   Project 1      -->
           <h3 class="work__projects-title">Wax Motif</h3>
           <div class="work__img-wrapper work__image1">
-            <img src="/waxmoney.png" alt="Project 1" />
+            <img class="lazy" 
+            src="https://via.placeholder.com/900"
+            data-src="/waxmoney.png" 
+            alt="Project 1" />
           </div>
           <div class="work__project work__content1">
             <h3 class="work__project-subtitle">Wax Motif</h3>
@@ -230,7 +229,11 @@
           <!--   Project 2      -->
           <h3 class="work__projects-title">Draze Force</h3>
           <div class="work__img-wrapper work__image2">
-            <img src="/drazeforce.png" alt="Project 2" />
+            <img 
+            class="lazy" 
+            src="https://via.placeholder.com/900"
+            data-src="/drazeforce.png"
+            alt="Project 2" />
           </div>
           <div class="work__project work__content2">
             <h3 class="work__project-subtitle">Draze Force</h3>
@@ -249,7 +252,10 @@
           <!--   Project 3      -->
           <h3 class="work__projects-title">Artren</h3>
           <div class="work__img-wrapper work__image3">
-            <img src="/artren.png" alt="Project 3" />
+            <img class="lazy"
+            src="https://via.placeholder.com/900"
+            data-src="/artren.png" 
+            alt="Project 3" />
           </div>
           <div class="work__project work__content3">
             <h3 class="work__project-subtitle">Artren</h3>
@@ -268,7 +274,11 @@
           <!--   Project 4      -->
           <h3 class="work__projects-title">Wax Motif</h3>
           <div class="work__img-wrapper work__image4">
-            <img src="/platformpro.png" alt="Project 4" />
+            <img 
+            class="lazy" 
+            src="https://via.placeholder.com/900"
+            src="/platformpro.png" 
+            alt="Project 4" />
           </div>
           <div class="work__project work__content4">
             <h3 class="work__project-subtitle">PWaxMorif</h3>
@@ -287,7 +297,11 @@
           <!--   Project 5      -->
           <h3 class="work__projects-title">Draze Force</h3>
           <div class="work__img-wrapper work__image5">
-            <img src="/wallysvegan.png" alt="Project 5" />
+            <img
+            class="lazy" 
+            src="https://via.placeholder.com/900"
+            src="/wallysvegan.png" 
+            alt="Project 5" />
           </div>
           <div class="work__project work__content5">
             <h3 class="work__project-subtitle">Draze FOrce</h3>
@@ -306,7 +320,11 @@
           <!--   Project 6     -->
           <h3 class="work__projects-title">Artren</h3>
           <div class="work__img-wrapper work__image6">
-            <img src="/ucf-project.png" alt="Project 6" />
+            <img 
+            class="lazy" 
+            src="https://via.placeholder.com/900"
+            src="/ucf-project.png" 
+            alt="Project 6" />
           </div>
           <div class="work__project work__content6">
             <h3 class="work__project-subtitle">Artren</h3>
@@ -338,5 +356,6 @@
       <h3 class="footer__title">~ Vincent Do ~</h3>
     </footer>
     <script type="module" src="./scr/main.js"></script>
+    <script src="./scr/utils/mobile-nav.js"></script>
   </body>
 </html>

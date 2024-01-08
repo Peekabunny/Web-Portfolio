@@ -6,6 +6,7 @@
   --clr-slate800: #F0E7DB;
   --clr-sky: #91E6D8;
   --clr-pink: #FF63C3;
+  --clr-darkblue: #2D3748;
 
   /* sky rgb(145, 230, 216) */
   /* rose-pink  rgb(255,99,195) */
@@ -36,6 +37,15 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.light-mode {
+  --clr-light: #202023;
+  --clr-dark: #f1f5f9;
+  --clr-slate400: #2D3748;
+  --clr-slate600: #2D3748;
+  --clr-slate800: #2D3748;
+  --clr-darkblue: #FFFFFF
 }
 
 body {
